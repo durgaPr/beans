@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" xmlns:p="http://www.springframework.org/schema/p" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean abstract="true" class="com.bike.Bikes" id="basepulsor">
+
+<property value="Bajaj" name="make"/>
+
+<property value="150cc" name="engineCC"/>
+
+</bean>
+
+
+<bean class="com.bike.Bikes" id="pulsor1" parent="basepulsor">
+
+<property value="TS079999" name="id"/>
+
+</bean>
+
+
+<bean class="com.bike.Bikes" id="pulsor2" parent="basepulsor">
+
+<property value="TS077799" name="id"/>
+
+</bean>
+
+</beans>
